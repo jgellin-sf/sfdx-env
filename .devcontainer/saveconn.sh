@@ -1,7 +1,4 @@
 #!/bin/bash
-
-echo "test" > test.txt
-
 [ ! -d "${HOME}/.sfdx" ] && mkdir "${HOME}/.sfdx"
 
 [ -z "${SFDX_COBU_USERNAME}" ] && exit 1

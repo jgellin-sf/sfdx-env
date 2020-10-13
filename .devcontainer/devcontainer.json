@@ -8,7 +8,7 @@
     "esbenp.prettier-vscode",
     "salesforce.codey-midnight"
   ],
-  "postCreateCommand": "/root/workspace/sfdx-env/.devcontainer/saveconn.sh",
+  "postCreateCommand": "/bin/bash ./.devcontainer/saveconn.sh > ~/saveconn.log",
   "settings": {
     "salesforcedx-vscode-apex.java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
     "workbench.colorTheme": "Codey Midnight",
