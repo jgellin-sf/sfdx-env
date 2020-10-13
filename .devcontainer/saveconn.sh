@@ -1,11 +1,12 @@
 #!/bin/bash
+echo "1"
 [ ! -d "${HOME}/.sfdx" ] && mkdir "${HOME}/.sfdx"
-
+echo "2"
 [ -z "${SFDX_COBU_USERNAME}" ] && exit 1
-
+echo "3"
 connectionFile="${HOME}/.sfdx/${SFDX_COBU_USERNAME}.json"
 NL=$'\n'
-
+echo "4"
 contents="{${NL}"
 contents="${contents}    \"username\": \"${SFDX_COBU_USERNAME}\""
 [ ! -z "${SFDX_COBU_ORGID}" ] && contents="${contents},${NL}    \"orgId\": \"${SFDX_COBU_ORGID}\""
@@ -20,6 +21,6 @@ contents="${contents}    \"username\": \"${SFDX_COBU_USERNAME}\""
 [ ! -z "${SFDX_COBU_DEVHUBUSERNAME}" ] && contents="${contents},${NL}    \"devHubUsername\": \"${SFDX_COBU_DEVHUBUSERNAME}\""
 [ ! -z "${SFDX_COBU_EXPIRATIONDATE}" ] && contents="${contents},${NL}    \"expirationDate\": \"${SFDX_COBU_EXPIRATIONDATE}\""
 contents="${contents}${NL}}"
-
+echo "5"
 echo "Creating connection file ${connectionFile}"
 echo "${contents}" > "${connectionFile}"
