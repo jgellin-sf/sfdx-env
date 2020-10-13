@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+
 [ ! -d "${HOME}/.sfdx" ] && mkdir "${HOME}/.sfdx"
 
 [ -z "${SFDX_COBU_USERNAME}" ] && exit 1
@@ -22,4 +24,5 @@ contents="${contents}    \"username\": \"${SFDX_COBU_USERNAME}\""
 [ ! -z "${SFDX_COBU_EXPIRATIONDATE}" ] && contents="${contents},${NL}    \"expirationDate\": \"${SFDX_COBU_EXPIRATIONDATE}\""
 contents="${contents}${NL}}"
 
+echo "Creating connection file ${connectionFile}"
 echo "${contents}" > "${connectionFile}"
