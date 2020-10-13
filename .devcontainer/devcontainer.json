@@ -6,8 +6,7 @@
     "redhat.vscode-xml",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "salesforce.codey-midnight",
-    "/home/codespace/workspace/sfdx-env/.devcontainer/sfdx-env.vsix"
+    "salesforce.codey-midnight"
   ],
   "postCreateCommand": "~/workspace/sfdx-env/.devcontainer/saveconn.sh",
   "settings": {
