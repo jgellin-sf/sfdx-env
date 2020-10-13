@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "test" > "~/workspace/test.txt"
+echo "test" > test.txt
 
 [ ! -d "${HOME}/.sfdx" ] && mkdir "${HOME}/.sfdx"
 
