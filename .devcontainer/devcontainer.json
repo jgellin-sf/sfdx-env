@@ -6,9 +6,9 @@
     "redhat.vscode-xml",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "salesforce.codey-midnight"
+    "salesforce.codey-midnight",
+    "/workspaces/sfdx-env/.devcontainer/sfdx-env.vsix"
   ],
-  "postStartCommand": "/bin/bash ./.devcontainer/saveconn.sh >> ~/saveconn.log",
   "settings": {
     "salesforcedx-vscode-apex.java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
     "workbench.colorTheme": "Codey Midnight",
